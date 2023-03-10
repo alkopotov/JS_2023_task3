@@ -60,7 +60,6 @@ form.addEventListener('submit', function(e) {
     document.querySelector('.direction').textContent ='Введите данные всех полей полностью!'
   } else {
     let table = document.querySelector('.table__res');
-  console.log(table);
     if (table) {
       table.innerHTML += setRow(resVal)
     } else {
@@ -69,8 +68,10 @@ form.addEventListener('submit', function(e) {
       table.innerHTML = '<tr><th>Банк</th><th>Номер карты</th><th>Действительна до</th><th>Имя владельца</th></tr>'
       table.innerHTML += setRow(resVal)
       document.body.appendChild(table);
-      console.log(false);
     }
     document.querySelector('.direction').textContent = 'Введите данные новой карты'
+    for (el in this.elements) {
+      this.elements[el].value = '';
+    }
   }
 })
