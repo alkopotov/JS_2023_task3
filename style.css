@@ -5,16 +5,25 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.direction {
+  font-size: 2rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
 .wrapper {
-  padding-top: 100px;
+  max-width: 810px;
+  margin: auto;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   justify-items: center;
   justify-content: center;
 }
 
 form {
+  margin: auto;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -33,6 +42,7 @@ label{
 }
 
 .card {
+  margin: auto;
   padding: 20px;
   display: grid;
   grid-template-rows: 3fr 1fr 1fr 1fr;
@@ -51,8 +61,9 @@ button {
 .card__bank__res {
   margin-top: 20px;
   display: flex;
-  font-size: 30px;
+  font-size: 2.5rem;
   justify-content: center;
+  color: antiquewhite;
   align-items: top;
 }
 .card__num__res {
@@ -60,8 +71,8 @@ button {
   margin: auto;
   display: flex;
   gap: 20px;
-  font-size: 30px;
-  color: aliceblue;
+  font-size: 1.8rem;
+  color: rgb(227, 208, 160);
 }
 .card__valid__res {
   margin-left: 100px;
@@ -71,13 +82,17 @@ button {
 }
 .card__valid__res__month, .card__valid__res__year {
   display: flex;
-  color:blue;
+  color:rgb(46, 46, 48);
   font-size: 20px;
   margin-bottom: 15px;
 }
+.card__valid__res__header {
+  padding-top: 2px;
+}
 
 .card__holder__res {
-  font-size: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   margin-left: 50px;
 }
 .table__res {
@@ -87,7 +102,7 @@ button {
 td {
   justify-content: center;
   text-align: center;
-  padding-left: 3px 10px;
+  padding-left: 20px;
 }
 
 th {

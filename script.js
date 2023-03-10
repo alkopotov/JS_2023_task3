@@ -50,18 +50,21 @@ form.addEventListener('submit', function(e) {
   for (let j = 0; j < this.elements.length - 1; j++) {
     resVal.push(this.elements[j].value)
   }
-  if (!(resVal.includes('') || resVal[1].length < 16)) {
+  if ((resVal.includes('') || resVal[1].length < 16)){
+    document.querySelector('.direction').textContent ='Введите данные всех полей полностью!'
+  } else {
     let table = document.querySelector('.table__res');
   console.log(table);
-  if (table) {
-    table.innerHTML += setRow(resVal)
-  } else {
-    table = document.createElement('table');
-    table.className = 'table__res'
-    table.innerHTML = '<tr><th>Банк</th><th>Номер карты</th><th>Действительна до</th><th>Имя владельца</th></tr>'
-    table.innerHTML += setRow(resVal)
-    document.body.appendChild(table);
-    console.log(false);
-  }
+    if (table) {
+      table.innerHTML += setRow(resVal)
+    } else {
+      table = document.createElement('table');
+      table.className = 'table__res'
+      table.innerHTML = '<tr><th>Банк</th><th>Номер карты</th><th>Действительна до</th><th>Имя владельца</th></tr>'
+      table.innerHTML += setRow(resVal)
+      document.body.appendChild(table);
+      console.log(false);
+    }
+    document.querySelector('.direction').textContent = 'Введите данные новой карты'
   }
 })
