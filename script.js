@@ -24,6 +24,9 @@ bank.addEventListener('input', function(e) {
 })
 
 cardNumber.addEventListener('input', function(e){
+  if (/[^0-9]/.test(e.target.value[e.target.value.length - 1])) {
+    e.target.value = e.target.value.slice(0, e.target.value.length - 1)
+  }
   let numberToDisplay = getSplits(e.target.value);
   document.querySelector('.card__num__res1').textContent = numberToDisplay.slice(0,4);
   document.querySelector('.card__num__res2').textContent = numberToDisplay.slice(4,8);
@@ -40,6 +43,9 @@ valYear.addEventListener('change', function(e){
 })
 
 holder.addEventListener('input', function(e) {
+  if (/[^a-zA-Zа-яA-Я ]/.test(e.target.value[e.target.value.length - 1])) {
+    e.target.value = e.target.value.slice(0, e.target.value.length - 1)
+  }
   document.querySelector('.card__holder__res').textContent = e.target.value.toUpperCase();
 })
 
