@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <div>
+        <label>Банк-эмитент</label>
+        <input type="text" class="field" name="bank" placeholder="Банк">
+      </div>
+      <div>
+        <label>Номер карты</label>
+        <input type="text" class ="field" name="card__num" placeholder="Номер карты" maxlength="16">
+      </div>
+      <div class="valid-till">
+        <label>Действительна до</label>
+        <div>
+          <select name="month" class="field valid__month">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select name="year" class = "field valid__year">
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+            <option value="28">2028</option>
+            <option value="29">2029</option>
+            <option value="30">2030</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="card_holder">Имя владельца</label>
+        <input type="text" class="field" name="card_holder" placeholder="Имя владельца">
+      </div>
+      <button type="submit" class="field">Добавить карту</button>
+    </form>
+
+    <div class="card">
+      <div class="card__bank__res">Банк</div>
+      <div class="card__num__res">
+        <div class="card__num__res1">----</div>
+        <div class="card__num__res2">----</div>
+        <div class="card__num__res3">----</div>
+        <div class="card__num__res4">----</div>
+      </div>
+      <div class="card__valid__res">
+        <div class="card__valid__header">VALID THRU</div>
+        <div class="card__valid__res__month">--</div>
+        <div class="card__valid__res__header">/</div>
+        <div class="card__valid__res__year">--</div>
+      </div>
+      <div class="card__holder__res">Cardholder</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
