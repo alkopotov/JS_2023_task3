@@ -9,14 +9,13 @@ const setRow = function (array) {
 return `<tr><td>${array[0].toUpperCase()}</td><td>${array[1].slice(0,4) + ' ' + array[1].slice(4,8) + ' ' + array[1].slice(8,12) + ' ' + array[1].slice(12,16)}</td> <td>${array[2] + '/' + array[3]} </td> <td>${array[4].toUpperCase()}</td></tr>`
 }
 
-// !/[^а-яА-Я- ]/.test(name)
-
-console.log(setRow(['Сбербанк', '1234123412341234', '01', '22', 'Иван Иванов']));
 const form = document.forms[0];
 const bank = form.elements[0];
 const cardNumber = form.elements[1];
 const valMonth = form.elements[2];
+valMonth.value = '';
 const valYear = form.elements[3];
+valYear.value = '';
 const holder = form.elements[4];
 
 bank.addEventListener('input', function(e) {
@@ -73,5 +72,13 @@ form.addEventListener('submit', function(e) {
     for (el in this.elements) {
       this.elements[el].value = '';
     }
+    document.querySelector('.card__num__res1').textContent = '----';
+    document.querySelector('.card__num__res2').textContent = '----';
+    document.querySelector('.card__num__res3').textContent = '----';
+    document.querySelector('.card__num__res4').textContent = '----';
+    document.querySelector('.card__valid__res__month').textContent = '--';
+    document.querySelector('.card__valid__res__year').textContent = '--';
+    document.querySelector('.card__holder__res').textContent = 'CARDHOLDER';
+    document.querySelector('.card__bank__res').textContent = 'ISSUED BY';
   }
 })

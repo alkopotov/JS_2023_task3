@@ -56,7 +56,10 @@ label{
 button {
   cursor: pointer;
   width: fit-content;
+  font-weight: 600;
+  color: darkblue;
   padding: 5px 15px;
+  box-shadow: 0 0 3px gray;
 }
 .card__bank__res {
   margin-top: 20px;
@@ -68,6 +71,7 @@ button {
 }
 .card__num__res {
   font-family: 'Credit Card';
+  text-shadow: 3px 3px 3px black;
   margin: auto;
   display: flex;
   gap: 20px;
@@ -83,6 +87,7 @@ button {
 .card__valid__res__month, .card__valid__res__year {
   display: flex;
   color:rgb(46, 46, 48);
+  text-shadow: 1px 1px 1px gray;
   font-size: 20px;
   margin-bottom: 15px;
 }
@@ -92,6 +97,7 @@ button {
 
 .card__holder__res {
   font-size: 1.5rem;
+  text-shadow: 1px 1px 1px gray;
   letter-spacing: 2px;
   margin-left: 50px;
 }
