@@ -118,7 +118,7 @@ th {
   padding: 10px 20px;
 }
 
-.visa, .mir, .upay, .mcard {
+.visa, .mir, .upay, .mcard, .logo {
   position: relative;
   left: 380px;
   width: 100px;
