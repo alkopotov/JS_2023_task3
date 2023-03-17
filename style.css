@@ -96,6 +96,8 @@ button {
 }
 
 .card__holder__res {
+  position: relative;
+  bottom: -15px;
   font-size: 1.5rem;
   text-shadow: 1px 1px 1px gray;
   letter-spacing: 2px;
@@ -114,4 +116,27 @@ td {
 th {
   font-size: 20px;
   padding: 10px 20px;
+}
+
+.visa, .mir, .upay, .mcard {
+  position: relative;
+  left: 380px;
+  width: 100px;
+  min-height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.visa {
+  background-image: url(images/visa.png);
+}
+.mir {
+  background-image: url(images/mir.png);
+}
+.upay {
+  background-image: url(images/upay.png);
+}
+.mcard {
+  background-image: url(images/mastercard.png)
 }

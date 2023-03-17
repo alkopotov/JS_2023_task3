@@ -16,6 +16,15 @@
         <input type="text" class="field" name="bank" placeholder="Банк">
       </div>
       <div>
+        <label>Платежная система</label>
+        <select name="system" class="field">
+          <option value="1">МИР</option>
+          <option value="2">Visa</option>
+          <option value="3">MasterCard</option>
+          <option value="4">UnionPay</option>
+        </select>
+      </div>
+      <div>
         <label>Номер карты</label>
         <input type="text" class ="field" name="card__num" placeholder="Номер карты" maxlength="16">
       </div>
@@ -70,6 +79,7 @@
         <div class="card__valid__res__year">--</div>
       </div>
       <div class="card__holder__res">CARDHOLDER</div>
+      <div class="logo"></div>
     </div>
   </div>
   <script src="script.js"></script>
