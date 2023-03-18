@@ -42,6 +42,7 @@ label{
 }
 
 .card {
+  position: relative;
   margin: auto;
   padding: 20px;
   display: grid;
@@ -62,6 +63,7 @@ button {
   box-shadow: 0 0 3px gray;
 }
 .card__bank__res {
+  position: relative;
   margin-top: 20px;
   display: flex;
   font-size: 2.5rem;
@@ -70,6 +72,7 @@ button {
   align-items: top;
 }
 .card__num__res {
+  position: relative;
   font-family: 'Credit Card';
   text-shadow: 3px 3px 3px black;
   margin: auto;
@@ -77,12 +80,15 @@ button {
   gap: 20px;
   font-size: 1.8rem;
   color: rgb(227, 208, 160);
+  bottom: -15px;
 }
 .card__valid__res {
+  position: relative;
   margin-left: 100px;
   margin-top: 10px;
   display: flex;
-  gap: 10px
+  gap: 10px;
+  bottom: -20px;
 }
 .card__valid__res__month, .card__valid__res__year {
   display: flex;
@@ -97,11 +103,11 @@ button {
 
 .card__holder__res {
   position: relative;
-  bottom: -15px;
+  bottom: -35px;
   font-size: 1.5rem;
   text-shadow: 1px 1px 1px gray;
   letter-spacing: 2px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .table__res {
   margin: auto;
