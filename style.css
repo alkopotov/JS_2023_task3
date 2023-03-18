@@ -106,6 +106,7 @@ button {
 .table__res {
   margin: auto;
   margin-top: 20px;
+  border-collapse:  collapse;
 }
 td {
   justify-content: center;
@@ -116,6 +117,14 @@ td {
 th {
   font-size: 20px;
   padding: 10px 20px;
+  border-collapse:  collapse;
+  border: thin dotted gray;
+}
+
+td, tr {
+  border: thin dotted gray;
+  padding: 5px 10px;
+
 }
 
 .visa, .mir, .upay, .mcard, .logo {
